@@ -1,0 +1,25 @@
+{
+  "name": "chakra-journal",
+  "version": "1.0.0",
+  "description": "chakra-journal",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ckirk9/chakra-journal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ckirk9/chakra-journal/issues"
+  },
+  "homepage": "https://github.com/Ckirk9/chakra-journal#readme"
+}
