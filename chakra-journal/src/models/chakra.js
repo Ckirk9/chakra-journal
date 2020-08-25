@@ -21,4 +21,4 @@ class ChakraModel {
   }
 }
 
-export default chakraModel
+export default ChakraModel

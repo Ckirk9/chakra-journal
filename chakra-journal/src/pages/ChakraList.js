@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ChakraModel from '../models/chakra'
 
-import { Link } from 'react-route-dom'
+import { Link } from 'react-router-dom'
 import ChakraCard from '../components/ChakraCard'
 
 class ChakraList extends Component {

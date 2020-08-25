@@ -8,16 +8,16 @@ const Header = (props) => {
             <div>
                 <ul>
                 { props.currentUser ? 
-                
+                // when the user is logged in 
                 <>
-                <li><Link to={'/chakras'}>Chakras</Link></li>
+                {/* <li><Link to={'/chakras'}>Chakras</Link></li> */}
                 <li><Link to={'/profile'}>Profile</Link></li>
                 <li><a href="/logout" onClick={ props.logout}>Log Out </a></li>
                 </>
                 :
                 // when the user is not logged in 
                 <>
-                <li><Link to={'/chakras'}>Chakras</Link></li>
+                {/* <li><Link to={'/chakras'}>Chakras</Link></li> */}
                 <li><Link to={'/signUp'}>Sign Up</Link></li>
                 <li><Link to={'/login'}>Login</Link></li>     
                 </>

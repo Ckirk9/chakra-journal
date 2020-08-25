@@ -5,7 +5,8 @@ class SignUp extends Component {
     state = {
         userName: '',
         password: '',
-        password2: ''
+        password2: '', 
+        preferences: ''
     }
 
     handleChange = event => {
@@ -26,7 +27,8 @@ class SignUp extends Component {
             this.setState({
                 userName: '',
                 password: '',
-                password2: ''
+                password2: '',
+               // preferences: ''
             })
             // direct to login
             this.props.history.push('/login')
@@ -38,13 +40,13 @@ class SignUp extends Component {
             <div>
                 <h3>Sign Up</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <div className="form=group">
-                        <label htmlFor="name">Username</label>
+                    <div className="form-group">
+                        <label htmlFor="userName">Username</label>
                         <input 
-                        onChange={this.handleSubmit}
+                        onChange={this.handleChange}
                         type="text"
-                        id="username"
-                        name="username"
+                        id="userName"
+                        name="userName"
                         value={this.state.userName}
                         />
                     </div>
@@ -64,8 +66,18 @@ class SignUp extends Component {
                         type="password"
                         id="password2"
                         name="password2"
-                        value={this.state.password} />
+                        value={this.state.password2} />
                 </div>
+                {/* <div className="form-group">
+                        <label htmlFor="checkbox">Recommendation Preferences</label>
+                        <input 
+                        onChange={this.handleSubmit}
+                        type="checkbox"
+                        id="preferences"
+                        name="preferences"
+                        value={this.state.preferences}
+                        />
+                    </div> */}
                 <button type="submit">Sign Up</button>
                 </form>
             </div>

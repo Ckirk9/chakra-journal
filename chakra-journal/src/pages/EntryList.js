@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import EntryModel from '..models/entry'
+import EntryModel from '../models/entry'
 
-import { Link } from 'react-route-dom'
+import { Link } from 'react-router-dom'
 import EntryCard from '../components/EntryCard'
 
 class EntryList extends Component {
@@ -20,7 +20,7 @@ class EntryList extends Component {
     }
 
     render() {
-        let EntryList = this.state.entries.map((game, index) => {
+        let EntryList = this.state.entries.map((entry, index) => {
             return (
                 <Link to={`/entries/${entry._id}`} key={index}>
                     <EntryCard {...entry} />
