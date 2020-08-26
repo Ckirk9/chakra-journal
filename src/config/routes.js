@@ -9,6 +9,7 @@ import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
 import ChakraList from '../pages/ChakraList'
 import ChakraShow from '../pages/ChakraShow'
+import EditEntry from '../pages/EditEntry'
 
 export default (props) => {
     return (
@@ -16,6 +17,7 @@ export default (props) => {
         <Route exact path='/' component={ Home } />
         <Route path='/entries/new' component={ NewEntry } />
         <Route path='/entries/:id' component={ EntryShow } />
+        <Route path='/editEntry/:id' component={ EditEntry } />
         <Route path='/profile' component={ Profile }/>
         <Route path='/SignUp' component={ SignUp } />
         <Route path='/chakras/:id' component={ ChakraShow } />

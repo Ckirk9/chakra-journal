@@ -15,14 +15,17 @@ class EntryShow extends Component {
     fetchData = () => {
         EntryModel.show(this.state.currentEntry).then(data => {
             // TODO: Address entry state!
-            this.setState({ chakra: data.entry })
+            this.setState({ entry: data.entry })
         })
     }
 
     render() {
         return (
             <div>
-                < EntryCard {...this.state.chakra }/>
+            <div>
+                < EntryCard entry={this.state.entry} />
+            </div>
+
             </div>
         )
     }
