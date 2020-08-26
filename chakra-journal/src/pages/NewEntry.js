@@ -4,9 +4,8 @@ import EntryModel from '../models/entry'
 class NewEntry extends Component {
     state = {
         entryDate: '',
-        //preferences: '',
-        assessmentResults: '',
         body: '',
+        user: localStorage.getItem('uid')
     }
 
     handleSubmit = (event) => {
@@ -36,17 +35,18 @@ class NewEntry extends Component {
                         <label htmlFor="date">Entry Date</label>
                         <input 
                         type="date"
-                        name="entry-date"
+                        name="entryDate"
                         onChange={this.handleChange}
                         value={this.state.entryDate} />
                     </div>
                     <div className="entry-form">
-                        <label htmlFor="">Entry Date</label>
-                        <input 
-                        type="date"
-                        name="entry-date"
+                       <textarea 
+                        name="body" 
+                        placeholder="Begin typing entry here..."
                         onChange={this.handleChange}
-                        value={this.state.entryDate} />
+                        value={this.state.body} >
+                        </textarea>
+                        <input type="submit" value="Save!"/>
                     </div>
                 </form>
             </div>

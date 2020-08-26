@@ -1,8 +1,8 @@
 const url = `http://localhost:5000/api/v1`
 
 class EntryModel {
-    static all = () => {
-        return fetch(`${url}/entries`).then(res => res.json())
+    static all = (userID) => {
+        return fetch(`${url}/entries/userEntries/${userID}`).then(res => res.json())
     }
 
     static show = (entryId) => {

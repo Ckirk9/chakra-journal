@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom'
 
 class Profile extends Component {
     state = {
-        entries: []
+        entries: [],
+        user: localStorage.getItem('uid'),
     }
 
     componentDidMount() {
+        console.log('state: ', this.state);
         this.fetchData()
     }
 
@@ -24,7 +26,8 @@ class Profile extends Component {
             <ul>
                 <li><Link to={'/entries'}>My Entries</Link></li>
                 <li><Link to={'/entries/new'}>New Entry</Link></li>
-                <li><Link to={'/entries'}>My Entries</Link></li>
+                <li><Link to={'/checkIn/new'}>Check In</Link></li>
+
             </ul>
         )
     }

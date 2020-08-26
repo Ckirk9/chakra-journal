@@ -11,7 +11,8 @@ import SignUp from '../pages/SignUp'
 import ChakraList from '../pages/ChakraList'
 import ChakraShow from '../pages/ChakraShow'
 
-export default (props) => (
+export default (props) => {
+    return (
     <Switch>
         <Route exact path='/' component={ Home } />
         <Route path='/entries/new' component={ NewEntry } />
@@ -27,5 +28,5 @@ export default (props) => (
             storeUser={ props.storeUser }
             />
         }} />
-    </Switch>
-)
+    </Switch>)
+}
