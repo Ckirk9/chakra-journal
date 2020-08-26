@@ -14,6 +14,7 @@ class EntryShow extends Component {
 
     fetchData = () => {
         EntryModel.show(this.state.currentEntry).then(data => {
+            // TODO: Address entry state!
             this.setState({ chakra: data.entry })
         })
     }

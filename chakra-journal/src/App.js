@@ -17,7 +17,7 @@ function App(props) {
   const logout = event => {
     event.preventDefault()
     localStorage.removeItem('uid')
-    UserModel.logout()
+    UserModel.signOut()
     .then(data => {
       console.log(data)
       setCurrentUser(null)

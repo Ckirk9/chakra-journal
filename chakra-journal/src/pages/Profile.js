@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 //import ChakraModel from '../models/chakra'
 import EntryModel from '../models/entry'
 import { Link } from 'react-router-dom'
+import EntryList from '../components/EntryList'
 //import ChakraCard from '../components/ChakraCard'
 
 class Profile extends Component {
@@ -11,24 +12,27 @@ class Profile extends Component {
     }
 
     componentDidMount() {
-        console.log('state: ', this.state);
         this.fetchData()
     }
 
     fetchData = () => {
-        EntryModel.all().then(data => {
+        EntryModel.all(localStorage.getItem('uid')).then(data => {
             this.setState({ entries: data.entries })
         })
     }
 
     render() {
         return(
-            <ul>
-                <li><Link to={'/entries'}>My Entries</Link></li>
-                <li><Link to={'/entries/new'}>New Entry</Link></li>
-                <li><Link to={'/checkIn/new'}>Check In</Link></li>
-
-            </ul>
+            <div>
+                <ul>
+                    <li><Link to={'/entries/new'}>New Entry</Link></li>
+                    <li><Link to={'/checkIn/new'}>Check In</Link></li>
+                </ul>
+                <div>
+                    <EntryList entries={ this.state.entries }/>
+                </div>
+            </div>
+                
         )
     }
 }

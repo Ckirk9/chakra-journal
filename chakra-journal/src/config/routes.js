@@ -2,7 +2,6 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import Home from '../pages/Home'
-import EntryList from '../pages/EntryList'
 import EntryShow from '../pages/EntryShow'
 import NewEntry from '../pages/NewEntry'
 import Profile from '../pages/Profile'
@@ -17,7 +16,6 @@ export default (props) => {
         <Route exact path='/' component={ Home } />
         <Route path='/entries/new' component={ NewEntry } />
         <Route path='/entries/:id' component={ EntryShow } />
-        <Route path='/entries' component={ EntryList}/>
         <Route path='/profile' component={ Profile }/>
         <Route path='/SignUp' component={ SignUp } />
         <Route path='/chakras/:id' component={ ChakraShow } />

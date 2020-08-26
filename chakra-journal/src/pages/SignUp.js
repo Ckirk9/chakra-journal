@@ -22,7 +22,7 @@ class SignUp extends Component {
         if (this.state.password !== this.state.password2) return false
         UserModel.create(this.state)
         .then(data => {
-            console.log(data)
+            //console.log(data)
             // clear state in order to clear form fields
             this.setState({
                 userName: '',

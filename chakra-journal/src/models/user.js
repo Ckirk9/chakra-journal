@@ -20,8 +20,8 @@ export default class UserModel {
         return await res.json()
     }
 
-    static async logout() {
-        const res = await fetch(`${REACT_APP_API_URL}/auth/logout`, {
+    static async signOut() {
+        const res = await fetch(`${REACT_APP_API_URL}/auth/signOut`, {
             method: "DELETE",
             credentials: "include",
         })
