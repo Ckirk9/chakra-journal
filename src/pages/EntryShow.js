@@ -14,7 +14,6 @@ class EntryShow extends Component {
 
     fetchData = () => {
         EntryModel.show(this.state.currentEntry).then(data => {
-            // TODO: Address entry state!
             this.setState({ entry: data.entry })
         })
     }
@@ -25,7 +24,6 @@ class EntryShow extends Component {
             <div>
                 < EntryCard entry={this.state.entry} />
             </div>
-
             </div>
         )
     }

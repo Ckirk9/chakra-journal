@@ -19,6 +19,19 @@ class EntryModel {
         })
             .then(res => res.json())
     }
+
+    static edit = (entry) => {
+        return fetch(`${url}/entries/${entry.entry._id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(entry.entry)
+        })
+        
+        
+        .then(res => res.json())
+    }
 }
 
 export default EntryModel
