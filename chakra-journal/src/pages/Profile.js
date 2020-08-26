@@ -15,7 +15,7 @@ class Profile extends Component {
 
     fetchData = () => {
         EntryModel.all().then(data => {
-            this.state({ entries: data.entries })
+            this.setState({ entries: data.entries })
         })
     }
 
