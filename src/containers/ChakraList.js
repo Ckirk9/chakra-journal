@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom'
 const chakraList = () => {
     return (
         <div>
-        <Link to="root">Root</Link>
-        <Link to="sacral">Sacral</Link>
-        <Link to="solar">Solar</Link>
-        <Link to="heart">Heart</Link>
-        <Link to="throat">Throat</Link>
-        <Link to="thirdEye">Third Eye</Link>
-        <Link to="crown">Crown</Link>
+        <Link to="/chakras/root">Root</Link> {' | '}
+        <Link to="/chakras/sacral">Sacral</Link> {' | '}
+        <Link to="/chakras/solar">Solar</Link> {' | '}
+        <Link to="/chakras/heart">Heart</Link> {' | '}
+        <Link to="/chakras/throat">Throat</Link> {' | '}
+        <Link to="/chakras/thirdEye">Third Eye</Link> {' | '}
+        <Link to="/chakras/crown">Crown</Link>
         </div>
     )
 }

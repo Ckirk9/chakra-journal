@@ -13,6 +13,7 @@ const Header = (props) => {
                 {/* <li><Link to={'/chakras'}>Chakras</Link></li> */}
                 <li><Link to={'/profile'}>Profile</Link></li>
                 <li><a href="/logout" onClick={ props.logout}>Log Out </a></li>
+                <li><Link to={'/chakras'}>7 Major Chakras</Link></li>
                 </>
                 :
                 // when the user is not logged in 

@@ -20,7 +20,7 @@ export default (props) => {
         <Route path='/editEntry/:id' component={ EditEntry } />
         <Route path='/profile' component={ Profile }/>
         <Route path='/SignUp' component={ SignUp } />
-        <Route path='/chakras/:id' component={ ChakraShow } />
+        <Route path='/chakras/:name' component={ ChakraShow } />
         <Route path='/chakras' component={ ChakraList} />
         <Route path='/login' render={ (routeProps) => {
             return <Login
