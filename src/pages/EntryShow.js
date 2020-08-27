@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import EntryModel from '../models/entry'
 import EntryCard from '../components/EntryCard'
+import { Link } from 'react-router-dom'
 
 class EntryShow extends Component {
     state = {
@@ -18,14 +19,25 @@ class EntryShow extends Component {
         })
     }
 
+    deleteThisEntry = () => {
+        EntryModel.destroy(this.state.entry._id).then(data => {
+            this.props.history.push('/profile')
+        })
+    }
+
     render() {
-        return (
+        return this.state.entry._id ?
             <div>
-            <div>
-                < EntryCard entry={this.state.entry} />
-            </div>
-            </div>
-        )
+                <EntryCard entry={this.state.entry} />
+                <Link to={`/editEntry/${this.state.entry._id}`}>Edit</Link>
+                <div>
+                    <span
+                    className="remove"
+                    onClick={this.deleteThisEntry}>
+                        Delete Entry
+                    </span>
+                </div>
+            </div> : 'Loading...'
     }
 }
 

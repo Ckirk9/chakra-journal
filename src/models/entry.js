@@ -10,6 +10,7 @@ class EntryModel {
     }
 
     static create = (entryData) => {
+        console.log('Entry Data NEW: ', entryData);
         return fetch(`${url}/entries`, {
             method: "POST",
             headers: {
@@ -28,8 +29,13 @@ class EntryModel {
             },
             body: JSON.stringify(entry.entry)
         })
-        
-        
+        .then(res => res.json())
+    }
+
+    static destroy = (id) => {
+        return fetch(`${url}/entries/${id}`, {
+            method: "DELETE"
+        })
         .then(res => res.json())
     }
 }

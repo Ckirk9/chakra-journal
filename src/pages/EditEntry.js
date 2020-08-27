@@ -21,7 +21,7 @@ class EditEntry extends Component {
         event.preventDefault()
         EntryModel.edit(this.state)
         .then(data => {
-            this.props.history.push('/entries')
+            this.props.history.push('/profile')
         })
     }
 

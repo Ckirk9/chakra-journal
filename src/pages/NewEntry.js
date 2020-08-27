@@ -12,7 +12,7 @@ class NewEntry extends Component {
         event.preventDefault()
         EntryModel.create(this.state)
         .then(data => {
-            this.props.history.push('/entries')
+            this.props.history.push('/profile')
         })
     }
 

@@ -1,13 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const EntryCard = (props) => {
+    // TODO DRY it up!!!
+    const formatDate = (rawDate) => {
+        console.log(rawDate)
+        if (rawDate) {
+            rawDate = new Date(rawDate)
+            const year = rawDate.getFullYear()
+            const month = rawDate.getMonth() + 1
+            let monthString = month.toString()
+            if (month < 10) {
+                monthString = '0' + month.toString()
+            }
+            const day = rawDate.getDate() + 1
+            let dayString = day.toString()
+            if (day < 10) {
+                dayString = '0' + day.toString()
+            }
+            return `${year}-${monthString}-${dayString}`
+        } else {
+            return rawDate
+        }
+    }
+
+
     return (
-        <div className="EntryCard">
-            <h5>{ props.entry.entryDate }</h5>
+        props.entry ? <div className="EntryCard">
+            <h5>{ formatDate(props.entry.entryDate) }</h5>
             <p>{ props.entry.body }</p>
-            <Link to={`/editEntry/${props.entry._id}`}>Edit</Link>
-        </div>
+            </div> : null
     )
 }
 
