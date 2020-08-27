@@ -8,12 +8,12 @@ const CHAKRAS = {
         "overactive": "greedy, lethargic, aggressive, cynical, materialistic",
         "balanced":  "safe, secure, grounded, happy to be alive",
         "image": "rootImg.jpeg",
-        "crystal": ["ruby", "bloodstone", "hematite"],
-        "essential oil": ["patchouli", "rosewood", "juniper"], 
+        "crystal": "ruby, bloodstone, hematite",
+        "essentialOil": "patchouli, rosewood, juniper",
         "mantra": [ "I am"],
-        "nature therapy": ["gardening", " hiking", "earth sitting"],
-        "yoga asana": "https://www.youtube.com/watch?v=r9PmDj8BKeg",
-        "guided meditation": "https://www.youtube.com/watch?v=cdScjlpftMM"
+        "natureTherapy": "gardening, hiking, earth sitting",
+        "yoga": "https://www.youtube.com/watch?v=r9PmDj8BKeg",
+        "meditation": "https://www.youtube.com/watch?v=cdScjlpftMM"
     },
    sacral: {
         "name": "Sacral",
@@ -24,12 +24,12 @@ const CHAKRAS = {
         "overactive": "over-emotional, fixated on sex, hedonistic, manipulative",
         "balanced":  "passion, creative, healthy libido, optimistic, open",
         "image": "",
-        "crystal": ["coral", "fire opal", "carnelian", "garnet"],
-        "essential oil": ["ylang ylang", "jasmine", "orange"], 
+        "crystal": "coral, fire opal, carnelian, garnet",
+        "essentialOil": "ylang ylang, jasmine, orange", 
         "mantra": [ "I feel"],
-        "nature therapy": ["spend time by or in water", "creative expression", "sexual expression"],
-        "yoga asana": "https://www.youtube.com/watch?v=hsy_t2u3zjU",
-        "guided meditation": "https://www.youtube.com/watch?v=QcId1qEKGJo"
+        "natureTherapy": "spend time by or in water, creative expression, sexual expression",
+        "yoga": "https://www.youtube.com/watch?v=hsy_t2u3zjU",
+        "meditation": "https://www.youtube.com/watch?v=QcId1qEKGJo"
     },
    solar: {
         "name": "Solar",
@@ -40,12 +40,12 @@ const CHAKRAS = {
         "overactive": "power hungry, domineering, perfectionist, critical",
         "balanced":  "confident, in control, good self-image, ambitious",
         "image": "",
-        "crystal": ["tiger eye", "citrine", "amber"],
-        "essential oil": ["lemon", "peppermint", "ginger", "neroli"], 
+        "crystal": "tiger eye, citrine, amber",
+        "essentialOil": "lemon, peppermint, ginger, neroli", 
         "mantra": [ "I do"],
-        "nature therapy": ["sunbathing", "practice healthy boundaries"],
-        "yoga asana": "https://www.youtube.com/watch?v=N4mfzXcXseY",
-        "guided meditation": "https://www.youtube.com/watch?v=5wHFfouqivU"
+        "natureTherapy": "sunbathing practice healthy boundaries",
+        "yoga": "https://www.youtube.com/watch?v=N4mfzXcXseY",
+        "meditation": "https://www.youtube.com/watch?v=5wHFfouqivU"
     },
    heart: {
         "name": "Heart",
@@ -56,12 +56,12 @@ const CHAKRAS = {
         "overactive": "jealous, codependent, self-sacrificing, give too much of yourself",
         "balanced":  "peaceful, loving, compassionate, tolerant, warm, open",
         "image": "",
-        "crystal": ["emerald", "jade", "aventurine", "rose quartz"],
-        "essential oil": ["chamomile", "bergamot", "lemongrass"], 
+        "crystal": "emerald, jade, aventurine, rose quartz",
+        "essentialOil": "chamomile, bergamot, lemongrass", 
         "mantra": [ "I love"],
-        "nature therapy": ["time to yourself", "self-care"],
-        "yoga asana": "https://www.youtube.com/watch?v=eCp5jYAZik4",
-        "guided meditation": "https://www.youtube.com/watch?v=5Yfeo3kPVSs"
+        "natureTherapy": "time to yourself, self-care",
+        "yoga": "https://www.youtube.com/watch?v=eCp5jYAZik4",
+        "meditation": "https://www.youtube.com/watch?v=5Yfeo3kPVSs"
     }, 
    throat: {
         "name": "Throat",
@@ -72,12 +72,12 @@ const CHAKRAS = {
         "overactive": "opinionated, loud, critical, gossipy, talk over others, harsh words",
         "balanced":  "confident expression, clear communicator, creative, diplomatic",
         "image": "",
-        "crystal": ["sodalite", "sapphire", "turquoise"],
-        "essential oil": ["sage", "peppermint"], 
+        "crystal": "sodalite, sapphire, turquoise",
+        "essentialOil": "sage, peppermint", 
         "mantra": [ "I speak"],
-        "nature therapy": ["singing", "chanting", "meaningful discussions"],
-        "yoga asana": "https://www.youtube.com/watch?v=uOIKfO77zM4",
-        "guided meditation": "https://www.youtube.com/watch?v=gMJ346GHatM"
+        "natureTherapy": "singing, chanting, meaningful discussions",
+        "yoga": "https://www.youtube.com/watch?v=uOIKfO77zM4",
+        "meditation": "https://www.youtube.com/watch?v=gMJ346GHatM"
     },
    thirdEye: {
         "name": "Third Eye",
@@ -88,12 +88,12 @@ const CHAKRAS = {
         "overactive": "nightmares, delusions, hallucinations, obsessive",
         "balanced":  "imaginative, intuitive, clear thoughts and vision, sees beyond physical",
         "image": "",
-        "crystal": ["amethyst", "fluorite", "lapis lazuli"],
-        "essential oil": ["lavender", "pine", "sage", "sandalwood"],
+        "crystal": "amethyst, fluorite, lapis lazuli",
+        "essentialOil": "lavender, pine, sage, sandalwood",
         "mantra": [ "I see"],
-        "nature therapy": ["dreaming of possibilities", "releasing preconceived notions"],
-        "yoga asana": "https://www.youtube.com/watch?v=XMQGC7eh1sI",
-        "guided meditation": "https://www.youtube.com/watch?v=kBhHUxLcSPM"
+        "natureTherapy": "dreaming of possibilities, releasing preconceived notions",
+        "yoga": "https://www.youtube.com/watch?v=XMQGC7eh1sI",
+        "meditation": "https://www.youtube.com/watch?v=kBhHUxLcSPM"
     },
    crown: {
         "name": "Crown",
@@ -104,12 +104,12 @@ const CHAKRAS = {
         "overactive": "dogmatic, judgmental, spiritual addiction, ungrounded",
         "balanced":  "strong faith, universal love, intelligent, aware, wise, understanding",
         "image": "",
-        "crystal": ["amethyst", "diamond", "quartz crystal"],
-        "essential oil": ["frankincense", "sandalwood", "myrrh"], 
+        "crystal": "amethyst, diamond, quartz crystal",
+        "essentialOil": "frankincense, sandalwood, myrrh", 
         "mantra": [ "I understand"],
-        "nature therapy": ["meditation", "cloud watching", "star gazing"],
-        "yoga asana": "https://www.youtube.com/watch?v=GyYLSktZh5E",
-        "guided meditation": "https://www.youtube.com/watch?v=kJwC6AgHefY"
+        "natureTherapy": "meditation, cloud watching, star gazing",
+        "yoga": "https://www.youtube.com/watch?v=GyYLSktZh5E",
+        "meditation": "https://www.youtube.com/watch?v=kJwC6AgHefY"
     }
 }
 
