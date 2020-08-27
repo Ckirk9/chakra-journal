@@ -1,15 +1,15 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import Home from '../pages/Home'
-import EntryShow from '../pages/EntryShow'
-import NewEntry from '../pages/NewEntry'
-import Profile from '../pages/Profile'
-import Login from '../pages/Login'
-import SignUp from '../pages/SignUp'
-import ChakraList from '../pages/ChakraList'
-import ChakraShow from '../pages/ChakraShow'
-import EditEntry from '../pages/EditEntry'
+import Home from '../containers/Home'
+import EntryShow from '../containers/EntryShow'
+import NewEntry from '../containers/NewEntry'
+import Profile from '../containers/Profile'
+import Login from '../containers/Login'
+import SignUp from '../containers/SignUp'
+import ChakraList from '../containers/ChakraList'
+import ChakraShow from '../containers/ChakraShow'
+import EditEntry from '../containers/EditEntry'
 
 export default (props) => {
     return (
