@@ -6,7 +6,7 @@ const Nav = (props) => {
     return (
         <nav>
             <div className="nav">
-                <h4>Chakra Journal</h4>
+                <h2>Chakra Journal</h2>
                 <ul className="nav-ul">
                     { props.currentUser ? 
                     // when the user is logged in 

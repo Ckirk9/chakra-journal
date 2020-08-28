@@ -24,25 +24,27 @@ class CheckIn extends Component {
         return(
                 <div>
                 <h3>Check In with yourself</h3>
-                <form onSubmit={this.handleSubmit}> 
+                <form 
+                className="checkin-form"
+                onSubmit={this.handleSubmit}> 
                 { CheckInQuestions.map((questionData, idx) => {
                     const {questions, name} = questionData
                     return questions.map((question, index) => {
                     return(                    
                     <div className="question" key={`${ idx}-${index}`}>
                     <p>{ question }</p>
-                    <input type="radio"
+                    <input className="radio" type="radio"
                         name={ `${ name}-${index}` } onChange={this.handleChange} value="yes"/>
-                        <label htmlFor={ `${ name}-${index}` }>Yes</label>
-                    <input type="radio"
+                        <label className="radio" htmlFor={ `${ name}-${index}` }>Yes</label>
+                    <input className="radio" type="radio"
                         name={ `${ name}-${index}` } onChange={this.handleChange} value="no"/>
-                        <label htmlFor={ `${ name}-${index}` } >No</label>
+                        <label className="radio" htmlFor={ `${ name}-${index}` } >No</label>
 
                     </div>)
 
                 })
                 })}
-                <input type="submit" value="Submit"/>
+                <input className="submit-btn" type="submit" value="Submit"/>
                 </form>
                 
                 </div>

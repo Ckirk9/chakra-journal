@@ -5,7 +5,6 @@ $textOnPrimary: #94A8FF;
 $base-font: 30px;
 $font-size: 30;
 
-
 //CSS Reset
 * {
     margin: 0;
@@ -46,6 +45,13 @@ h1, h2, h3, h4, h5, h6, label, span {
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
 }
+label {
+    display: block;
+}
+input {
+    padding: 8px;
+    background-color: #2e86ab 70%;
+}
 
 img {
     width: 15%;
@@ -56,6 +62,24 @@ img {
     margin-right: auto;
   }
 // Classes 
+
+.submit-btn {
+    background-color: #2e86ab 70%;
+}
+
+.checkin-form {
+    //align-items: center;
+    padding: 0 10%;
+}
+
+.radio {
+    flex-direction: row;
+    display: inline;
+    padding: 1%;
+}
+    
+
+
 .chakra-card{
     color: rgb(6, 5, 56);
     padding: 0 10%;

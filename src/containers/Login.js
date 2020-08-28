@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import UserModel from '../models/user'
+import { Form, Col, Row } from 'react-bootstrap'
 
 class Login extends Component {
     state = {
@@ -31,29 +32,39 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <h3>Login</h3>
-                <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="userName">Username</label>
-                    <input 
+                <Form onSubmit={this.handleSubmit}>
+                <Form.Group as={Row} controlId="formPlaintextEmail">
+                    <Form.Label 
+                    column sm="2">
+                    Username
+                    </Form.Label>
+                    <Col sm="10">
+                    <Form.Control                     autoComplete="off"
                     onChange={this.handleChange}
                     type="text"
                     id="userName"
                     name="userName"
                     value={this.state.userName}
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input 
-                        onChange={this.handleChange}
-                        type="password"
+                    plaintext placeholder="username" />
+                    </Col>
+                </Form.Group>
+
+                <Form.Group as={Row} controlId="formPlaintextPassword">
+                    <Form.Label 
+                    column sm="2"
                         id="password"
-                        name="password"
-                        value={this.state.password} />
-                </div>
+>
+                    Password
+                    </Form.Label>
+                    <Col sm="10">
+                    <Form.Control 
+                    onChange={this.handleChange}
+                    name="password"
+                        value={this.state.password} type="password" placeholder="Password" />
+                    </Col>
+                </Form.Group>
                 <button type="submit">Login</button>
-                </form>
+                </Form>
             </div>
         )
     }

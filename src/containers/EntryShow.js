@@ -34,7 +34,7 @@ class EntryShow extends Component {
                     <span
                     className="remove"
                     onClick={this.deleteThisEntry}>
-                        Delete Entry
+                        Delete
                     </span>
                 </div>
             </div> : 'Loading...'
