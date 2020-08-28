@@ -24,7 +24,8 @@ class Profile extends Component {
     render() {
         return(
             <div className="profile">
-                <h3>Welcome { this.state.uid }</h3>
+                <h3>Welcome { this.state.user }</h3>
+                
                 <ul>
                     <li><Link to={'/entries/new'}>New Entry</Link></li>
                     <li><Link to={'/checkIn'}>Check In</Link></li>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {withRouter} from 'react-router-dom'
-import Header from './components/Header'
+import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Routes from './config/routes'
 import UserModel from './models/user'
@@ -28,7 +28,7 @@ function App(props) {
   return (
     <div className="App">
       <div>
-      <Header 
+      <Nav 
       currentUser={ currentUser }
       logout={ logout } 
       />

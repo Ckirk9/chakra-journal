@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CHAKRAS from '../chakraData'
 import ChakraCard from '../components/ChakraCard'
+import { Accordion, Card, Button } from 'react-bootstrap'
 
 class Results extends Component {
 
@@ -13,7 +14,19 @@ class Results extends Component {
         for (const result in results) {
             const outOfBalance = result.split("-")[0]
             if (results[result] === "no" && !renderedChakraNames.includes(outOfBalance)) {
-                chakraJSX.push(<ChakraCard key={result} { ...CHAKRAS[outOfBalance]} />)
+                const billow = <Card key={outOfBalance}>
+                <Card.Header>
+                    <Accordion.Toggle as={Button} variant="link" eventKey={outOfBalance}>
+                        {outOfBalance.toUpperCase()}
+                    </Accordion.Toggle>
+                </Card.Header>
+                    <Accordion.Collapse eventKey={outOfBalance}>
+                        <Card.Body>
+                            <ChakraCard { ...CHAKRAS[outOfBalance]} />
+                        </Card.Body>
+                    </Accordion.Collapse>
+                </Card>
+                chakraJSX.push(billow)
                 renderedChakraNames.push(outOfBalance)
             }
         }
@@ -23,7 +36,9 @@ class Results extends Component {
     render () {
         return (
             <div>
-                { this.getChakras()}
+                <Accordion>
+                    { this.getChakras()}
+                </Accordion>
             </div>
         )
     }

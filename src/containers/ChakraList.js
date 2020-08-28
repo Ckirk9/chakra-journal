@@ -6,14 +6,21 @@ import { Link } from 'react-router-dom'
 
 const chakraList = () => {
     return (
-        <div>
-        <Link to="/chakras/root">Root</Link> {' | '}
-        <Link to="/chakras/sacral">Sacral</Link> {' | '}
-        <Link to="/chakras/solar">Solar</Link> {' | '}
-        <Link to="/chakras/heart">Heart</Link> {' | '}
-        <Link to="/chakras/throat">Throat</Link> {' | '}
-        <Link to="/chakras/thirdEye">Third Eye</Link> {' | '}
+        <div className="chakra-list">
+        <Link to="/chakras/root">Root</Link> 
+        <img src="rootImg.jpeg" alt=""/>
+        <Link to="/chakras/sacral">Sacral</Link> 
+        <img src="sacralImg.jpeg" alt=""/>
+        <Link to="/chakras/solar">Solar</Link> 
+        <img src="solarImg.jpeg" alt=""/>
+        <Link to="/chakras/heart">Heart</Link> 
+        <img src="heartImg.jpeg" alt=""/>
+        <Link to="/chakras/throat">Throat</Link> 
+        <img src="throatImg.jpeg" alt=""/>
+        <Link to="/chakras/thirdEye">Third Eye</Link> 
+        <img src="thirdEyeImg.jpeg" alt=""/>
         <Link to="/chakras/crown">Crown</Link>
+        <img src="crownImg.jpeg" alt=""/>
         </div>
     )
 }
