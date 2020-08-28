@@ -27,7 +27,7 @@ class Profile extends Component {
                 <h3>Welcome { this.state.uid }</h3>
                 <ul>
                     <li><Link to={'/entries/new'}>New Entry</Link></li>
-                    <li><Link to={'/checkIn/new'}>Check In</Link></li>
+                    <li><Link to={'/checkIn'}>Check In</Link></li>
                 </ul>
                 <div>
                     <EntryList entries={ this.state.entries }/>

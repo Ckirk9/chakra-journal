@@ -11,6 +11,7 @@ import ChakraList from '../containers/ChakraList'
 import ChakraShow from '../containers/ChakraShow'
 import EditEntry from '../containers/EditEntry'
 import CheckIn from '../containers/CheckIn'
+import Results from '../containers/Results'
 
 export default (props) => {
     return (
@@ -23,7 +24,8 @@ export default (props) => {
         <Route path='/SignUp' component={ SignUp } />
         <Route path='/chakras/:name' component={ ChakraShow } />
         <Route path='/chakras' component={ ChakraList} />
-        <Route path='/checkIn/new' component={ CheckIn } />
+        <Route path='/checkIn' component={ CheckIn } />
+        <Route path='/results' component={ Results }/>
         <Route path='/login' render={ (routeProps) => {
             return <Login
             {...routeProps}

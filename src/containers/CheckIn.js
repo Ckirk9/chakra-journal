@@ -8,6 +8,10 @@ class CheckIn extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         console.log('this.state', this.state)
+        this.props.history.push({
+            pathname: '/results',
+            state: this.state
+        })
     }
 
     handleChange = (event) => {

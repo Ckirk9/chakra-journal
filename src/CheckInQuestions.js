@@ -6,7 +6,7 @@ const questions = [
 },
 
 { 
-    name: "Sacral",
+    name: "sacral",
     questions: ["Do you feel sexually and or creatively powerful?"]
 },
 

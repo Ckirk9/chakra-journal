@@ -34,7 +34,7 @@ const EntryList = (props) =>  {
     
 return (
     <div>
-        <h5>Your Previous Entries</h5>
+        <h5>Previous Entries</h5>
         { entries }
     </div>
 )
