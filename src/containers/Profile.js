@@ -23,7 +23,7 @@ class Profile extends Component {
 
     render() {
         return(
-            <div>
+            <div className="profile">
                 <h3>Welcome { this.state.uid }</h3>
                 <ul>
                     <li><Link to={'/entries/new'}>New Entry</Link></li>

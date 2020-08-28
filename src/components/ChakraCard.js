@@ -16,8 +16,9 @@ const ChakraCard = (props) => {
             { overactive}. When you are balanced in this area you may feel 
             more { balanced }.</p>
             <h5>Hollistic Therapies for the { name } Chakra :</h5>
-            <h6>Meditation : <a href={ meditation } target="_blank" rel="noopener noreferrer">Link to a guided meditation</a></h6>
-            <h6>Yoga : <a href={ yoga } target="_blank" rel="noopener noreferrer">Link to a guided yoga sequence</a></h6>
+            <h6>Meditation : </h6><iframe title="meditation" width="420" height="315" src={ meditation }></iframe>
+            {/* // eslint-disable-next-line */}
+            <h6>Yoga :</h6> <iframe title="yoga" width="420" height="315"  src={ yoga }></iframe>
             <h6>Crystals associated with balancing the { name } are { crystal }.</h6>
             <h6>Essential Oils to use for the { name } Chakra are { essentialOil }.</h6>
             <h6>Nature therapies to get you in touch with your { name } Chakra include

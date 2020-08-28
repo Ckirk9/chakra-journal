@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Routes from './config/routes'
 import UserModel from './models/user'
-//import ChakraModel from './models/chakra'
+import './App.scss'
 
 
 function App(props) {
@@ -27,7 +27,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <div className="App-header">
+      <div>
       <Header 
       currentUser={ currentUser }
       logout={ logout } 

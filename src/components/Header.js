@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom'
 const Header = (props) => {
     return (
         <header>
-            <div>
+            <div className="header">
                 <ul>
+                    <h4>Welcome to the Chakra Journal</h4>
                 { props.currentUser ? 
                 // when the user is logged in 
                 <>

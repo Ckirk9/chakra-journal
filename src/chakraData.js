@@ -12,8 +12,8 @@ const CHAKRAS = {
         "essentialOil": "patchouli, rosewood, juniper",
         "mantra": [ "I am"],
         "natureTherapy": "gardening, hiking, earth sitting",
-        "yoga": "https://www.youtube.com/watch?v=r9PmDj8BKeg",
-        "meditation": "https://www.youtube.com/watch?v=cdScjlpftMM"
+        "yoga": "https://www.youtube.com/embed/r9PmDj8BKeg",
+        "meditation": "https://www.youtube.com/embed/cdScjlpftMM"
     },
    sacral: {
         "name": "Sacral",
@@ -28,8 +28,8 @@ const CHAKRAS = {
         "essentialOil": "ylang ylang, jasmine, orange", 
         "mantra": [ "I feel"],
         "natureTherapy": "spend time by or in water, creative expression, sexual expression",
-        "yoga": "https://www.youtube.com/watch?v=hsy_t2u3zjU",
-        "meditation": "https://www.youtube.com/watch?v=QcId1qEKGJo"
+        "yoga": "https://www.youtube.com/embed/hsy_t2u3zjU",
+        "meditation": "https://www.youtube.com/embed/QcId1qEKGJo"
     },
    solar: {
         "name": "Solar",
@@ -44,8 +44,8 @@ const CHAKRAS = {
         "essentialOil": "lemon, peppermint, ginger, neroli", 
         "mantra": [ "I do"],
         "natureTherapy": "sunbathing practice healthy boundaries",
-        "yoga": "https://www.youtube.com/watch?v=N4mfzXcXseY",
-        "meditation": "https://www.youtube.com/watch?v=5wHFfouqivU"
+        "yoga": "https://www.youtube.com/embed/N4mfzXcXseY",
+        "meditation": "https://www.youtube.com/embed/5wHFfouqivU"
     },
    heart: {
         "name": "Heart",
@@ -60,8 +60,8 @@ const CHAKRAS = {
         "essentialOil": "chamomile, bergamot, lemongrass", 
         "mantra": [ "I love"],
         "natureTherapy": "time to yourself, self-care",
-        "yoga": "https://www.youtube.com/watch?v=eCp5jYAZik4",
-        "meditation": "https://www.youtube.com/watch?v=5Yfeo3kPVSs"
+        "yoga": "https://www.youtube.com/embed/eCp5jYAZik4",
+        "meditation": "https://www.youtube.com/embed/5Yfeo3kPVSs"
     }, 
    throat: {
         "name": "Throat",
@@ -76,8 +76,8 @@ const CHAKRAS = {
         "essentialOil": "sage, peppermint", 
         "mantra": [ "I speak"],
         "natureTherapy": "singing, chanting, meaningful discussions",
-        "yoga": "https://www.youtube.com/watch?v=uOIKfO77zM4",
-        "meditation": "https://www.youtube.com/watch?v=gMJ346GHatM"
+        "yoga": "https://www.youtube.com/embed/uOIKfO77zM4",
+        "meditation": "https://www.youtube.com/embed/gMJ346GHatM"
     },
    thirdEye: {
         "name": "Third Eye",
@@ -92,8 +92,8 @@ const CHAKRAS = {
         "essentialOil": "lavender, pine, sage, sandalwood",
         "mantra": [ "I see"],
         "natureTherapy": "dreaming of possibilities, releasing preconceived notions",
-        "yoga": "https://www.youtube.com/watch?v=XMQGC7eh1sI",
-        "meditation": "https://www.youtube.com/watch?v=kBhHUxLcSPM"
+        "yoga": "https://www.youtube.com/embed/XMQGC7eh1sI",
+        "meditation": "https://www.youtube.com/embed/kBhHUxLcSPM"
     },
    crown: {
         "name": "Crown",
@@ -108,8 +108,8 @@ const CHAKRAS = {
         "essentialOil": "frankincense, sandalwood, myrrh", 
         "mantra": [ "I understand"],
         "natureTherapy": "meditation, cloud watching, star gazing",
-        "yoga": "https://www.youtube.com/watch?v=GyYLSktZh5E",
-        "meditation": "https://www.youtube.com/watch?v=kJwC6AgHefY"
+        "yoga": "https://www.youtube.com/embed/GyYLSktZh5E",
+        "meditation": "https://www.youtube.com/embed/kJwC6AgHefY"
     }
 }
 

@@ -41,6 +41,7 @@ class NewEntry extends Component {
                     </div>
                     <div className="entry-form">
                        <textarea 
+                        class="form-control"
                         name="body" 
                         placeholder="Begin typing entry here..."
                         onChange={this.handleChange}

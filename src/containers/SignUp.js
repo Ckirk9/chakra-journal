@@ -37,12 +37,12 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form-group">
                 <h3>Sign Up</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="userName">Username</label>
-                        <input 
+                        <label className="form-group" htmlFor="userName">Username</label>
+                        <input className="form-group"
                         onChange={this.handleChange}
                         type="text"
                         id="userName"
@@ -51,8 +51,8 @@ class SignUp extends Component {
                         />
                     </div>
                     <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input 
+                    <label className="form-group" htmlFor="password">Password</label>
+                    <input className="form-group"
                         onChange={this.handleChange}
                         type="password"
                         id="password"
@@ -60,8 +60,8 @@ class SignUp extends Component {
                         value={this.state.password} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password2">Confirm Password</label>
-                    <input 
+                    <label className="form-group" htmlFor="password2">Confirm Password</label>
+                    <input className="form-group"
                         onChange={this.handleChange}
                         type="password"
                         id="password2"
@@ -78,7 +78,7 @@ class SignUp extends Component {
                         value={this.state.preferences}
                         />
                     </div> */}
-                <button type="submit">Sign Up</button>
+                <button className="btn" type="submit">Sign Up</button>
                 </form>
             </div>
         )
