@@ -45,15 +45,14 @@ class Login extends Component {
                     id="userName"
                     name="userName"
                     value={this.state.userName}
-                    plaintext placeholder="username" />
+                    placeholder="username" />
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} controlId="formPlaintextPassword">
                     <Form.Label 
                     column sm="2"
-                        id="password"
->
+                        id="password">
                     Password
                     </Form.Label>
                     <Col sm="10">
@@ -63,7 +62,7 @@ class Login extends Component {
                         value={this.state.password} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                <button type="submit">Login</button>
+                <button className="submit-btn" type="submit">Login</button>
                 </Form>
             </div>
         )

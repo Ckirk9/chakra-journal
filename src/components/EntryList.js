@@ -26,16 +26,16 @@ const EntryList = (props) =>  {
 
     let entries = props.entries ? props.entries.map((entry, index) => {
         return (
-            <Link to={`/entries/${entry._id}`} key={index}>
-                <h5>{formatDate(entry.entryDate)}</h5>
-            </Link>
+            <li> <Link to={`/entries/${entry._id}`} key={index}>
+                {formatDate(entry.entryDate)}
+            </Link></li>
         )
     }) : 'No entries'
     
 return (
     <div>
-        <h5>Previous Entries</h5>
-        { entries }
+        <h7>Previous Entries</h7>
+        <ul>{ entries }</ul>
     </div>
 )
 }

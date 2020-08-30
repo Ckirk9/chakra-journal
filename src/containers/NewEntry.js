@@ -47,7 +47,7 @@ class NewEntry extends Component {
                         onChange={this.handleChange}
                         value={this.state.body} >
                         </textarea>
-                        <input type="submit" value="Save!"/>
+                        <input className="submit-btn" type="submit" value="Save!"/>
                     </div>
                 </form>
             </div>

@@ -26,7 +26,7 @@ const EntryCard = (props) => {
 
     return (
         props.entry ? <div className="EntryCard">
-            <h5>{ formatDate(props.entry.entryDate) }</h5>
+            <h8>{ formatDate(props.entry.entryDate) }</h8>
             <p>{ props.entry.body }</p>
             </div> : null
     )

@@ -78,7 +78,7 @@ class SignUp extends Component {
                         value={this.state.preferences}
                         />
                     </div> */}
-                <button className="btn" type="submit">Sign Up</button>
+                <button className="submit-btn" type="submit">Sign Up</button>
                 </form>
             </div>
         )
