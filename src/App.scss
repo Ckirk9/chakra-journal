@@ -1,0 +1,149 @@
+// scss variables
+$color-primary: #94A8FF;
+$secondaryColor: #94A8FF;
+$textOnPrimary: #94A8FF;
+$base-font: 30px;
+$font-size: 30;
+
+//CSS Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $base-font;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #94A8FF;
+    text-decoration: none;
+    list-style-type: none;
+    background-size: 200% 100% !important;
+    animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background-color: #c73e1d;
+    background-image: linear-gradient(315deg, #c73e1d 0%, #a23b72 37%, #2e86ab 100%);
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    color: #94A8FF;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ a:hover {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, label, span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+label {
+    display: block;
+}
+input {
+    padding: 8px;
+    background-color: #2e86ab 70%;
+}
+
+img {
+    width: 15%;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+form {
+    margin: auto;
+    max-width: 60%;
+}
+// Classes 
+
+.submit-btn {
+    padding: 5px 10px;
+    background: #2e86ab 70%;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: #000000 2px 2px 0 0;
+    font-size: 14px;
+}
+
+.checkin-form {
+    //align-items: center;
+    padding: 0 10%;
+}
+
+.radio {
+    flex-direction: row;
+    display: inline;
+    padding: 1%;
+}
+    
+
+
+.chakra-card{
+    color: rgb(6, 5, 56);
+    padding: 0 10%;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    width: 33%;
+    margin-bottom: 0;
+}
+
+.footer {
+    font-size: 10px;
+    color: whitesmoke
+}
+
+.nav {
+    padding: 60px;
+    text-align: center;
+    background: #00000062;
+    color: darken(#94A8FF, 10%);
+    font-size: 50px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px 3px;
+    margin-bottom: 30px;
+    a {
+        font-size: 16px;
+    }
+    a:hover {
+        font-size: 18px;
+    }
+}
+.nav:hover {
+    font-size: 2em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.chakra-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
