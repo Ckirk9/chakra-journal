@@ -8,7 +8,6 @@ class Results extends Component {
     getChakras() {
         let chakraJSX = []
         let renderedChakraNames = []
-        console.log(this.props, this.state)
         const results = this.props.location.state
         //for (const chakra in CHAKRAS ) {
         for (const result in results) {

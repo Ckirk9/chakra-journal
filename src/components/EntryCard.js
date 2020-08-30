@@ -3,7 +3,6 @@ import React from 'react'
 const EntryCard = (props) => {
     // TODO DRY it up!!!
     const formatDate = (rawDate) => {
-        console.log(rawDate)
         if (rawDate) {
             rawDate = new Date(rawDate)
             const year = rawDate.getFullYear()

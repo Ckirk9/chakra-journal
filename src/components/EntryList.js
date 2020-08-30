@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const EntryList = (props) =>  {
    // TODO DRYYYYYYY
     const formatDate = (rawDate) => {
-        console.log(rawDate)
         if (rawDate) {
             rawDate = new Date(rawDate)
             const year = rawDate.getFullYear()

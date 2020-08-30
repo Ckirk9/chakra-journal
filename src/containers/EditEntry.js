@@ -39,7 +39,6 @@ class EditEntry extends Component {
     }
 
     formatDate = (rawDate) => {
-        console.log(rawDate)
         if (rawDate) {
             rawDate = new Date(rawDate)
             const year = rawDate.getFullYear()
@@ -60,7 +59,6 @@ class EditEntry extends Component {
     }
     
     render() {
-        console.log(this.state.entry)
         return(
             <div>
                 <h2>Edit Entry</h2>

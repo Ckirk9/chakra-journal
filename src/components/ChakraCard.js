@@ -3,7 +3,6 @@ import React from 'react'
 
 const ChakraCard = (props) => {
     const {name, sanskrit, location, color, mantra, blocked, overactive, balanced, meditation, crystal, essentialOil, natureTherapy, yoga} = props
-    console.log('Med: ', meditation);
     return (
         <div>
         <div className="chakra-card">

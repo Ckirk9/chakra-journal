@@ -10,7 +10,6 @@ class EntryModel {
     }
 
     static create = (entryData) => {
-        console.log('Entry Data NEW: ', entryData);
         return fetch(`${url}/entries`, {
             method: "POST",
             headers: {
