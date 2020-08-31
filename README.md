@@ -4,7 +4,7 @@ This app will require the user to register with a username and password and then
 
 Technologies Used: Passport, Javascript, React, Express, Mongodb, Mongoose, Node, Bootstrap
 
-Links: https://trello.com/b/iw2kYvxx/chakra-journal | https://chakrajournalapi.herokuapp.com/
+Links: https://trello.com/b/iw2kYvxx/chakra-journal | https://chakrajournal.herokuapp.com/
 
 Unsolved Problems:
 
